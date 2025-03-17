@@ -1,0 +1,135 @@
+body{
+  background-color: rgba(250, 235, 215, 0.888);
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+/*Register  */
+
+.register {
+  margin-top: 4%;
+  background-color: rgb(252, 247, 241);
+  /* text-align: center; */
+  padding: 10px 30px 30px;
+  border-radius: 40px;
+  width: 20%;
+}
+
+.register h1 {
+  color: rgb(175, 148, 111);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
+  
+}
+
+.form label {
+  font-weight: bolder;
+  line-height: 20px;
+  padding-left: 5px;
+}
+
+.form input {
+  width: 96%;
+  height: 25px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(175, 148, 111);
+  padding: 5px;
+  font-size: medium;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 1px solid rgb(175, 148, 111);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: medium;
+}
+
+.errorLabel {
+  color: red;
+}
+
+.errorInput {
+  color: red;
+  border: 1px solid red !important;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(148, 98, 27);
+}
+
+.link:hover {
+  border-bottom: 2px rgb(148, 98, 27) solid;
+}
+
+.login {
+  
+}
+
+.forgotPassword {
+ 
+}
+
+.otpForm input {
+  width: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.otpForm input:first-child {
+  margin-left: 15px;
+}
+
+/* Dashboard */
+.dashboard {
+
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  background-color: aliceblue;
+}
+
+.logout {
+  height: 40px;
+  font-size: medium;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.main {
+  text-align: center;
+}
