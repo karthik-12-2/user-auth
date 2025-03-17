@@ -10,7 +10,6 @@ const generateToken = (id, email) => {
     return jwt.sign({ id: id, Email: email }, secretKey, { expiresIn: '5h' });
 }
 
-
 const verifyToken = (token) => {
     try {
         const secretKey = process.env.JWT_SECRET_KEY;
@@ -20,14 +19,5 @@ const verifyToken = (token) => {
     }
 }
 
-// const token = generateToken('677d57d7cfe21fdb70cfdeb6', 'karthik@gmail.com');
-// console.log(token)
-// const verifiedToken = verifyToken('dfasdfadfas');
-// if (verifiedToken) {
-//     console.log('Verified Token:', verifiedToken);
-//     // console.log('Email Matches:', verifiedToken.Email === 'noting@gmail.com');
-// } else {
-//     console.log('Token verification failed.');
-// }
 
 module.exports = { generateToken, verifyToken }
