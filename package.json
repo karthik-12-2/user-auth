@@ -1,0 +1,19 @@
+{
+  "name": "bothend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix frontend\" \"npm start --prefix backend\"",
+    "start:frontend": "npm start --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "install:frontend": "npm install --prefix frontend",
+    "install:backend": "npm install --prefix backend"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
